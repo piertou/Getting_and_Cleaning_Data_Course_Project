@@ -34,6 +34,7 @@ This project uses the processed feature measures in "UIC HAR Dataset/test" and "
 * I fixed a typo in some variable names, i.e., I changed "BodyBody" to "Body".
 * I replaced activity numbers with activity names.
 * I did not change any feature value.
+* Although UIC HAR Dataset/features.txt has duplicate names because of missing "-X", "-Y" and "-Z" axis substrings, these are not among the features selected for this project. So I did not cleanup those variable names. 
 ##Transformations
 
  - Per the project specifications (see the Project Tasks section of the [README.MD](README.md), I merged the 'test' and 'train' partitions, including their activities, subjects and features, into a single dataset.

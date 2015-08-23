@@ -83,6 +83,9 @@ The R script called run_analysis.R does the following:
    6. *In the source variable, the measure name component is omitted when the measure is not jerk. It is, by implication, linear acceleration for the accelerometer and angular velocity for the gyroscope. I inserted "Default" instead to make the measure component explicit. Feature compound names now all have 6 components.*
    7. Create a 6-character short name version and write three names csv files for the tidy data set: source names, descriptive names and short names.
    8. Create a table of variable names for the code book. *I created a data frame with a column for each of the three name styles and wrote it to a text file. In the RStudio editor, I replaced '" "' with ' | '. Lastly, I inserted the string "--- | --- |---" in the second row. This gave me text that markdown understands as a table.*
- 5. From the data set in step 4, create a second, independent tidy data set with the average of each variable for each activity and each subject.
+ 5. From the data set in step 4, create a second, independent tidy data set with the average of each variable for each activity and each subject. *This step ends with a View command of the tidyMeans data frame to allow the evaluator to  verify its correctness. As suggested by [David Hood](https://www.coursera.org/user/i), the evaluator can also download the text version, tidyMeans.txt, to his/her working directory and use the following code to view it.*
+ 
+    > data <- read.table("tidyMeans.txt",  header = TRUE) 
+     View(data)
 
 > Written with [StackEdit](https://stackedit.io/).

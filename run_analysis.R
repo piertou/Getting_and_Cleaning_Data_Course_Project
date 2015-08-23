@@ -107,4 +107,4 @@ write.table(codebookVariables, "codebookVariables.txt", row.names = FALSE)
 #  Note: non-numeric variable "set" is not included in tidyMeans 
 tidyMeans <- ddply(tidyData, .(activity, subject), numcolwise(mean))
 write.table(tidyMeans, "tidyMeans.txt", row.names = FALSE)
-
+View(tidyMeans)

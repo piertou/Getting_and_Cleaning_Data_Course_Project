@@ -85,8 +85,10 @@ The R script called run_analysis.R does the following:
    8. Create a table of variable names for the code book. *I created a data frame with a column for each of the three name styles and wrote it to a text file. In the RStudio editor, I replaced '" "' with ' | '. Lastly, I inserted the string "--- | --- |---" in the second row. This gave me text that markdown understands as a table.*
  5. From the data set in step 4, create a second, independent tidy data set with the average of each variable for each activity and each subject. *This step ends with a View command of the tidyMeans data frame to allow the evaluator to  verify its correctness. As suggested by [David Hood](https://www.coursera.org/user/i), the evaluator can also download the text version, tidyMeans.txt, to his/her working directory and use the following code to view it. *
  
+>data <- read.table("tidyMeans.txt",  header = TRUE)
+>View(data)   
 
-    data <- read.table("tidyMeans.txt",  header = TRUE)
-    View(data)
+----------
+
 
 > Written with [StackEdit](https://stackedit.io/).
